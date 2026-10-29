@@ -1,0 +1,13 @@
+{
+  "name": "aurelia-perfume-store",
+  "version": "1.0.0",
+  "description": "Aurelia perfume storefront with separate frontend and Express backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

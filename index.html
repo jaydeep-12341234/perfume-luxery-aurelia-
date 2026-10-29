@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#04141a">
+<meta name="description" content="Aurelia Cloud — a dreamy fragrance storefront demo.">
+<title>AURELIA — Cloud Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div id="loader"><b>AURELIA</b></div><div id="glow"></div>
+<div class="progress" id="progress"></div>
+<div class="announce"><span>✦ Free shipping above ₹4,999</span><span>✦ Gift wrapping on every order</span><span>✦ Demo store · no real payments</span></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#home">☁ AURELIA<small>PARFUMS</small></a>
+  <nav class="links" id="links">
+    <a href="#shop">Shop</a><a href="#categories">Moods</a><a href="#showcase">3D Showcase</a><a href="#finder">Scent Finder</a><a href="#notes">Notes</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+  </nav>
+  <div class="actions">
+    <button class="icon" id="searchBtn" aria-label="Search">⌕</button>
+    <button class="icon" id="wishBtn" aria-label="Wishlist">♡<b id="wishCount">0</b></button>
+    <button class="icon bag" id="bagBtn" aria-label="Open bag">👜<b id="bagCount">0</b></button>
+    <button class="icon burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="sky" aria-hidden="true"><canvas id="fx"></canvas>
+    <i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i><i class="cloud c4"></i><i class="cloud c5"></i>
+    <span class="sun"></span>
+  </div>
+  <div class="hero-copy">
+    <p class="kicker">NEW · CLOUD EDITION 2026</p>
+    <h1>Smell like a<br><em>soft sunrise.</em></h1>
+    <p class="lead">Twelve fragrances composed in layers of amber, petals, citrus and smoke — floating somewhere between a dream and a memory.</p>
+    <div class="cta"><a class="btn solid" href="#shop">Shop fragrances →</a><a class="btn ghost" href="#showcase">Explore in 3D</a></div>
+    <ul class="mini"><li><b>12</b> signature scents</li><li><b>50ml</b> eau de parfum</li><li><b>4.9★</b> sample rating</li></ul>
+  </div>
+  <div class="hero-stage" id="heroStage">
+    <div class="ring r1"></div><div class="ring r2"></div>
+    <div class="bottle3d" id="bottle3d">
+      <div class="cap"></div><div class="neck"></div>
+      <div class="glass"><div class="shine"></div><div class="juice"></div><div class="tag"><small>✦</small><b>AURELIA</b><hr><span>AMBER<br>NOIR</span></div></div>
+      <div class="shadow"></div>
+    </div>
+    <div class="chip ch1">☁ Amber</div><div class="chip ch2">✦ Saffron</div><div class="chip ch3">❀ Rose</div><div class="chip ch4">◈ Cedar</div>
+  </div>
+</section>
+
+<div class="marquee"><div class="track"><span>Wear the memory</span><b>✦</b><span>Find your signature</span><b>✦</b><span>Made to linger</span><b>✦</b><span>Soft as a cloud</span><b>✦</b><span>Wear the memory</span><b>✦</b><span>Find your signature</span><b>✦</b><span>Made to linger</span><b>✦</b><span>Soft as a cloud</span><b>✦</b></div></div>
+
+<!-- PERKS -->
+<section class="perks wrap">
+  <div class="perk" data-tilt><span>🚚</span><h3>Free delivery</h3><p>On orders above ₹4,999 (demo rule).</p></div>
+  <div class="perk" data-tilt><span>🎁</span><h3>Gift-ready</h3><p>Signature wrapping and a handwritten note.</p></div>
+  <div class="perk" data-tilt><span>🧪</span><h3>Sample first</h3><p>Try 2ml discovery vials before a full bottle.</p></div>
+  <div class="perk" data-tilt><span>↩</span><h3>Easy returns</h3><p>Sealed bottles, simple policy (placeholder).</p></div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="wrap" id="categories">
+  <div class="head reveal"><p class="kicker">01 / SHOP BY MOOD</p><h2>Pick your <em>weather.</em></h2></div>
+  <div class="cat-grid">
+    <a class="cat reveal" href="#shop" data-pick="warm" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=80" alt="Warm amber perfume"><div><span>06 scents</span><h3>Warm &amp; Smoky</h3></div></a>
+    <a class="cat reveal" href="#shop" data-pick="floral" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=80" alt="Floral perfume"><div><span>03 scents</span><h3>Soft Florals</h3></div></a>
+    <a class="cat reveal" href="#shop" data-pick="fresh" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=80" alt="Fresh citrus perfume"><div><span>03 scents</span><h3>Fresh &amp; Airy</h3></div></a>
+    <a class="cat reveal" href="#shop" data-pick="gift" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80" alt="Perfume gift sets"><div><span>Sets</span><h3>Gift Edits</h3></div></a>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="wrap shop" id="shop">
+  <div class="head row reveal"><div><p class="kicker">02 / THE COLLECTION</p><h2>Twelve ways to <em>feel.</em></h2></div>
+    <div class="toolbar">
+      <div class="filters" id="filters"><button class="chip-btn active" data-f="all">All</button><button class="chip-btn" data-f="warm">Warm</button><button class="chip-btn" data-f="floral">Floral</button><button class="chip-btn" data-f="fresh">Fresh</button><button class="chip-btn" data-f="gift">Gift sets</button></div>
+      <label class="sort">Sort <select id="sort"><option value="feat">Featured</option><option value="low">Price: low → high</option><option value="high">Price: high → low</option><option value="name">Name A–Z</option></select></label>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+  <p class="count" id="resultCount"></p>
+  <p class="note">Photography is illustrative stock; prices and descriptions are placeholders. Orders are not processed.</p>
+</section>
+
+<!-- BANNER -->
+<section class="banner">
+  <img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1800&q=80" alt="Perfume with botanicals on a studio table">
+  <div class="banner-in reveal"><p class="kicker light">THE DISCOVERY SET</p><h2>Six minis.<br><em>One perfect match.</em></h2><p>Sample the whole wardrobe in 2ml vials, then choose your forever bottle.</p><div class="cd" id="cd"><div><b id="cdh">00</b><small>HRS</small></div><div><b id="cdm">00</b><small>MIN</small></div><div><b id="cds">00</b><small>SEC</small></div></div><button class="btn solid" data-add="Discovery Set">Add set · ₹1,499</button></div>
+</section>
+
+<!-- 3D SHOWCASE -->
+<section class="wrap showcase" id="showcase">
+  <div class="head center reveal"><p class="kicker">03 / 3D SHOWCASE</p><h2>Spin the <em>collection.</em></h2><p class="sub">Drag, swipe or use the arrows. The ring turns on its own until you touch it.</p></div>
+  <div class="scene" id="scene">
+    <div class="carousel" id="carousel"></div>
+  </div>
+  <div class="car-ctrl"><button class="icon round" id="prev" aria-label="Previous">←</button><span id="carName">Amber Noir</span><button class="icon round" id="next" aria-label="Next">→</button></div>
+</section>
+
+<!-- CUBE -->
+<section class="wrap cubewrap" id="cube3d"><div class="head center reveal"><p class="kicker">3D CUBE</p><h2>Six scents, <em>one cube.</em></h2><p class="sub">It turns by itself. Hover to pause it.</p></div><div class="cubebox"><div class="cube" id="cube"></div></div></section>
+<!-- FINDER -->
+<section class="wrap finder" id="finder"><div class="reveal"><p class="kicker">FIND YOUR SCENT</p><h2>Two questions, <em>one match.</em></h2><p class="sub">Tell us your mood and how loud you want it. We pick the bottle.</p></div><div class="fq reveal" id="fq"></div></section>
+<!-- NOTES -->
+<section class="wrap notes" id="notes">
+  <div class="notes-copy reveal"><p class="kicker">04 / ANATOMY OF A SCENT</p><h2>Top. Heart. <em>Base.</em></h2><p class="sub">Every fragrance opens, blooms and settles. Hover the layers to see how a perfume unfolds across the day.</p>
+    <div class="stats"><div><b data-count="12">0</b><span>fragrances</span></div><div><b data-count="48">0</b><span>raw materials</span></div><div><b data-count="8">0</b><span>hour wear</span></div></div></div>
+  <div class="pyramid reveal">
+    <div class="layer l1" data-tilt><span>0–15 MIN</span><h3>Top notes</h3><p>Bergamot · Neroli · Pink pepper</p></div>
+    <div class="layer l2" data-tilt><span>15 MIN–3 HR</span><h3>Heart notes</h3><p>Rose · Peony · Saffron</p></div>
+    <div class="layer l3" data-tilt><span>3–8 HR</span><h3>Base notes</h3><p>Amber · Cedar · Oud · Musk</p></div>
+  </div>
+</section>
+
+<!-- INGREDIENTS -->
+<section class="wrap" id="ingredients">
+  <div class="head reveal"><p class="kicker">05 / INGREDIENTS</p><h2>Nature, <em>distilled.</em></h2></div>
+  <div class="ing-grid">
+    <article class="ing reveal" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80" alt="Green botanical leaves"><div><span>THE OPENING</span><h3>Bright botanicals</h3><p>Fresh green and citrus notes that welcome you in.</p></div></article>
+    <article class="ing reveal" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=900&q=80" alt="Natural textures"><div><span>THE HEART</span><h3>Living character</h3><p>Floral and aromatic layers that reveal slowly.</p></div></article>
+    <article class="ing reveal" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80" alt="Soft flowers"><div><span>THE FINISH</span><h3>Lasting warmth</h3><p>Woods, resins and musks that stay close to skin.</p></div></article>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="wrap" id="gallery">
+  <div class="head center reveal"><p class="kicker">06 / GALLERY</p><h2>Moments in <em>amber light.</em></h2></div>
+  <div class="masonry">
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80" alt="Luxury perfume bottles"></figure>
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=800&q=80" alt="Dark perfume bottle"></figure>
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=80" alt="Sunlit bottle"></figure>
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=800&q=80" alt="Rose perfume"></figure>
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=800&q=80" alt="Floral bottle"></figure>
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" alt="Minimal bottle"></figure>
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80" alt="Amber bottle"></figure>
+    <figure class="reveal"><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80" alt="Studio still life"></figure>
+  </div>
+</section>
+
+<!-- JOURNAL -->
+<section class="wrap" id="journal"><div class="head reveal"><p class="kicker">THE JOURNAL</p><h2>Stories from the <em>lab.</em></h2></div>
+<div class="journal"><article class="post reveal" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=900&q=80" alt="Perfume bottle"><div><span class="kicker">GUIDE</span><h3>How to layer two scents</h3><p>Start light, finish deep, and let each layer dry.</p></div></article>
+<article class="post reveal" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=900&q=80" alt="Perfume collection"><div><span class="kicker">INGREDIENTS</span><h3>Why oud costs so much</h3><p>A look at the wood, the harvest and the patience.</p></div></article>
+<article class="post reveal" data-tilt><img referrerpolicy="no-referrer" loading="lazy" src="https://images.unsplash.com/photo-1557170334-a9632e77c6e4?auto=format&fit=crop&w=900&q=80" alt="Perfume bottles"><div><span class="kicker">GIFTING</span><h3>Choosing a scent for someone else</h3><p>Three questions that make gifting easy.</p></div></article></div></section>
+<div class="strip" aria-hidden="true"><div class="track" id="stripTrack"></div></div>
+<!-- STEPS -->
+<section class="wrap steps">
+  <div class="head reveal"><p class="kicker">07 / THE RITUAL</p><h2>Wear it <em>well.</em></h2></div>
+  <div class="step-grid">
+    <article class="reveal" data-tilt><b>01</b><h3>Pulse points</h3><p>Wrists, neck and behind the ears — where skin runs warm.</p></article>
+    <article class="reveal" data-tilt><b>02</b><h3>Don't rub</h3><p>Let it settle so the heart notes stay intact.</p></article>
+    <article class="reveal" data-tilt><b>03</b><h3>Layer softly</h3><p>Pair with an unscented lotion to help it last.</p></article>
+    <article class="reveal" data-tilt><b>04</b><h3>Store cool</h3><p>Keep bottles away from sun and heat.</p></article>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="wrap reviews" id="reviews">
+  <div class="head center reveal"><p class="kicker">08 / WORDS THAT LINGER</p><h2>Kind <em>words.</em></h2></div>
+  <div class="rev-grid">
+    <article class="reveal" data-tilt><div>★★★★★</div><p>“Warm, expressive and elegant. Feels like a golden hour in a bottle.”</p><span>— Sample review</span></article>
+    <article class="reveal" data-tilt><div>★★★★★</div><p>“The packaging and mood feel beautiful. A real gifting moment.”</p><span>— Sample review</span></article>
+    <article class="reveal" data-tilt><div>★★★★★</div><p>“Soft, clean and long-lasting. I want the whole discovery set.”</p><span>— Sample review</span></article>
+  </div>
+  <small class="note center">Illustrative testimonials for demonstration — not verified customer reviews.</small>
+</section>
+
+<!-- FAQ -->
+<section class="wrap faq" id="faq">
+  <div class="reveal"><p class="kicker">09 / HELP</p><h2>Questions, <em>answered.</em></h2><p class="sub">Everything to know before choosing your signature.</p></div>
+  <div class="faq-items reveal">
+    <details><summary>Can I place a real order here?</summary><p>No. This is a front-end demo; no order is created and no payment is taken.</p></details>
+    <details><summary>Are photos and prices final?</summary><p>No. They are placeholders until you add your real catalogue and licensed photography.</p></details>
+    <details><summary>Which payments can be added later?</summary><p>UPI, cards and net banking via a gateway such as Razorpay or Cashfree, with a secure server and webhooks. COD can be configured separately.</p></details>
+    <details><summary>How do I contact the store?</summary><p>Add your verified phone, email and address when you go live.</p></details>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="wrap news">
+  <div class="news-card reveal"><div><p class="kicker">A NOTE FROM AURELIA</p><h2>A little beauty<br><em>in your inbox.</em></h2></div>
+  <form id="newsForm"><label for="email">Join the Aurelia letter</label><div class="row"><input id="email" type="email" placeholder="Your email address" required><button class="btn solid" type="submit">Subscribe</button></div><small id="newsMsg">Demo form only — nothing is sent or saved.</small></form></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div><a class="logo" href="#home">☁ AURELIA<small>PARFUMS</small></a><p>Scented in amber. Made to be remembered.</p></div>
+  <div><h4>Shop</h4><a href="#shop">All fragrances</a><a href="#categories">Moods</a><a href="#showcase">3D showcase</a></div>
+  <div><h4>Learn</h4><a href="#notes">Scent notes</a><a href="#ingredients">Ingredients</a><a href="#gallery">Gallery</a></div>
+  <div><h4>Help</h4><a href="#faq">FAQ</a><a href="#reviews">Reviews</a><a href="#home">Back to top ↑</a></div>
+  <small>© 2026 AURELIA PARFUMS · DEMO EXPERIENCE · Images by Unsplash contributors</small>
+</footer>
+
+<!-- Overlays -->
+<div class="search-panel" id="searchPanel" aria-hidden="true"><div class="search-in"><button class="icon" id="closeSearch" aria-label="Close search">✕</button><label for="q">SEARCH FRAGRANCES</label><input id="q" type="search" placeholder="Try rose, oud, citrus…" autocomplete="off"><p id="qHint">Search by name or notes.</p></div></div>
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true"><button class="icon modal-x" id="modalX" aria-label="Close dialog">✕</button><div id="modalBody"></div></div></div>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping bag" aria-hidden="true">
+  <div class="drawer-head"><h2>Your <em>bag.</em></h2><button class="icon" id="closeBag" aria-label="Close bag">✕</button></div>
+  <div class="ship"><p id="shipText"></p><div class="bar"><i id="shipBar"></i></div></div>
+  <div class="items" id="items"></div>
+  <div class="drawer-foot"><div class="sub"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><p>Shipping and taxes would be calculated at checkout.</p><button class="btn solid wide" id="checkout">Continue to checkout preview →</button><small>Demo only — no payments are collected.</small></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button class="totop" id="totop" aria-label="Back to top">↑</button>
+<div id="lb"><img referrerpolicy="no-referrer" alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>

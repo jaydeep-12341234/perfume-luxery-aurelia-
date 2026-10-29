@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "name": "Amber Noir",
+    "price": 3499,
+    "cat": "warm",
+    "notes": "Amber · Saffron · Cedar",
+    "img": "1594035910387-fea47794261f",
+    "desc": "A warm, smoky trail for nights that deserve to be remembered.",
+    "badge": "BESTSELLER"
+  },
+  {
+    "id": 2,
+    "name": "Velvet Bloom",
+    "price": 2999,
+    "cat": "floral",
+    "notes": "Rose · Peony · Musk",
+    "img": "1547887538-e3a2f32cb1cc",
+    "desc": "Petals at dusk, softened with a gentle, skin-close musk."
+  },
+  {
+    "id": 3,
+    "name": "Citrus Muse",
+    "price": 2799,
+    "cat": "fresh",
+    "notes": "Bergamot · Neroli · Vetiver",
+    "img": "1592945403244-b3fbafd7f539",
+    "desc": "Bright citrus and green woods, like morning opening its windows."
+  },
+  {
+    "id": 4,
+    "name": "Midnight Oud",
+    "price": 3999,
+    "cat": "warm",
+    "notes": "Oud · Incense · Tonka",
+    "img": "1595425970377-c9703cf48b6d",
+    "desc": "Deep woods and slow-burning incense with a velvet finish."
+  },
+  {
+    "id": 5,
+    "name": "Solar Skin",
+    "price": 3199,
+    "cat": "fresh",
+    "notes": "Neroli · Salt · White Musk",
+    "img": "1615634260167-c8cdede054de",
+    "desc": "A sun-warmed, airy scent with a soft mineral finish.",
+    "badge": "NEW"
+  },
+  {
+    "id": 6,
+    "name": "Rose Nocturne",
+    "price": 3299,
+    "cat": "floral",
+    "notes": "Damask Rose · Plum · Patchouli",
+    "img": "1590736969955-71cc94901144",
+    "desc": "Dark fruit and velvety rose, bold without ever being loud."
+  },
+  {
+    "id": 7,
+    "name": "Cloud Vanilla",
+    "price": 2899,
+    "cat": "warm",
+    "notes": "Vanilla · Coconut milk · Sandalwood",
+    "img": "1608571423902-eed4a5ad8108",
+    "desc": "Creamy and weightless, like a warm blanket made of mist.",
+    "badge": "NEW"
+  },
+  {
+    "id": 8,
+    "name": "Green Mist",
+    "price": 2599,
+    "cat": "fresh",
+    "notes": "Green tea · Fig leaf · Mint",
+    "img": "1501004318641-b39e6451bec6",
+    "desc": "Dewy leaves after rain — crisp, calm and clean."
+  },
+  {
+    "id": 9,
+    "name": "Petal Silk",
+    "price": 2699,
+    "cat": "floral",
+    "notes": "Jasmine · Lily · Pear",
+    "img": "1490750967868-88aa4486c946",
+    "desc": "A light floral that moves like silk in a breeze."
+  },
+  {
+    "id": 10,
+    "name": "Ember Wood",
+    "price": 3599,
+    "cat": "warm",
+    "notes": "Birch · Leather · Amber",
+    "img": "1518531933037-91b2f5f229cc",
+    "desc": "Campfire embers and polished wood, calm and confident."
+  },
+  {
+    "id": 11,
+    "name": "Discovery Set",
+    "price": 1499,
+    "cat": "gift",
+    "notes": "6 × 2ml mini vials",
+    "img": "1541643600914-78b084683601",
+    "desc": "Sample six signatures before choosing your forever bottle.",
+    "badge": "GIFT"
+  },
+  {
+    "id": 12,
+    "name": "Golden Hour Gift Box",
+    "price": 5999,
+    "cat": "gift",
+    "notes": "2 × 50ml · Gift wrap · Note",
+    "img": "1594035910387-fea47794261f",
+    "desc": "Two full bottles in signature packaging, ready to give.",
+    "badge": "GIFT"
+  },
+  {
+    "id": 13,
+    "name": "Saffron Dusk",
+    "price": 3399,
+    "cat": "warm",
+    "notes": "Saffron · Leather · Benzoin",
+    "img": "1523293182086-7651a899d37f",
+    "desc": "Golden spice melting into soft suede.",
+    "badge": "NEW"
+  },
+  {
+    "id": 14,
+    "name": "Iris Veil",
+    "price": 3099,
+    "cat": "floral",
+    "notes": "Iris · Violet · Cashmere wood",
+    "img": "1588405748880-12d1d2a59f75",
+    "desc": "Powdery, quiet and impossibly smooth."
+  },
+  {
+    "id": 15,
+    "name": "Sea Salt Drift",
+    "price": 2699,
+    "cat": "fresh",
+    "notes": "Sea salt · Grapefruit · Driftwood",
+    "img": "1557170334-a9632e77c6e4",
+    "desc": "Cool spray over warm stone."
+  },
+  {
+    "id": 16,
+    "name": "Tobacco Rain",
+    "price": 3699,
+    "cat": "warm",
+    "notes": "Tobacco · Rum · Vanilla",
+    "img": "1563170351-be82bc888aa4",
+    "desc": "Sweet leaf and a late-night storm.",
+    "badge": "BESTSELLER"
+  }
+]
